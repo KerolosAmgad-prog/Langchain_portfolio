@@ -1,0 +1,24 @@
+[project]
+name = "day1-dynamic-prompt-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kerolos Amgad", email = "kerolosamgad200@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.2",
+    "langchain-core>=1.6.3",
+    "langchain-openai>=1.6.2",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+    
+]
+
+[project.scripts]
+day1-dynamic-prompt-generator = "day1_dynamic_prompt_generator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
