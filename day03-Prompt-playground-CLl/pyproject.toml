@@ -1,0 +1,23 @@
+[project]
+name = "day03-prompt-playground-cll"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kerolos Amgad", email = "kerolosamgad200@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-core>=1.6.7",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.6.7",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+day03-prompt-playground-cll = "day03_prompt_playground_cll:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
